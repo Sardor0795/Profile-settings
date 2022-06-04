@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,9 +11,55 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    
+
+    <div class="main-content">
+        <form class="main-form" action="https://echo.htmlacademy.ru" method="post">
+
+            <header class="form-header">
+                <h1 class="site-heading"><a class="header-link" href="#">Account settings</a></h1>
+                <a href="#"><img src="./img/close.svg" width="30" height="30" alt="" class="close-img"></a>
+            </header>
+
+            <div class="form-wrapper">
+                <img class="form-avatar" src="./img/avatar.jpg" width="70" height="70" alt="Site img">
+                <div class="form-input-wrapper">
+                    <label class="label" for="">username</label>
+                    <input class="input" name="username" type="text" placeholder="Enter your username">
+                </div>
+                <div class="name-wrapper">
+                    <div class="form-input-wrapper">
+                        <label class="label" for="">first name</label>
+                        <input class="input" name="name" type="text" placeholder="Enter your first name">
+                    </div>
+                    <div class="form-input-wrapper">
+                        <label class="label" for="">last name</label>
+                        <input class="input" name="surname" type="text" placeholder="Enter your last name">
+                    </div>
+                </div>
+                <div class="form-input-wrapper">
+                    <label class="label" for="">email</label>
+                    <input class="input" name="email" type="email"
+                        pattern="^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$" placeholder="Enter your email">
+                </div>
+                <div class="form-input-wrapper">
+                    <label class="label" for="">bio</label>
+                    <textarea class="textarea" name="text" placeholder="Tell us about yourself"></textarea>
+                </div>
+
+            </div>
+
+            <footer class="form-footer">
+                <button class="form-btn" type="reset">Cancel</button>
+                <button class="form-btn" type="submit">Save</button>
+            </footer>
+
+        </form>
+    </div>
+
 
     <script src="js/main.js"></script>
 </body>
+
 </html>
